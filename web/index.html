@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"> -->
+    <!-- <script src="https://www.w3schools.com/lib/w3.js"></script> -->
+    <link rel="stylesheet" href="style.css">
+    <title>MSF Auto Raid Team Builder by Sirius Bohner</title>
+</head>
+<body>
+    <h1 class="title">Auto Raid Team</h1>
+    <div class="file-input-section">
+        <form action="">
+            <label for="csv-file">Upload your Alliance Roster CSV:</label><br>
+            <input type="file" id="csv-file" name="csv-file" accept=".csv"><br>
+            <input type="button" value="Submit" id="csv-file-submit">
+        </form>
+    </div>
+    <div id="roster-info">
+        <ul>
+            <li>
+                <b class="raid-header">Doom</b>
+                <div id="doomDisplay">
+                    <table id="myTable">
+                        <tr>
+                            <th onclick="w3.sortHTML('#myTable', '.item', 'td:nth-child(1)')" style="cursor:pointer">Member</th>
+                            <th onclick="w3.sortHTML('#myTable', '.item', 'td:nth-child(2)')" style="cursor:pointer">Power</th>
+                            <th style="display: none;"></th>
+                        </tr>
+                        <tr class="item">
+                            <td>3000</td>    
+                            <td>12000000</td>
+                            <td class="break">3000 info 3000 info 3000 info 3000 info 3000 info 3000 info 3000 info 3000 info 3000 info 3000 info 3000 info 3000 info 3000 info 3000 info 3000 info 3000 info 3000 info 3000 info 3000 info 3000 info 3000 info 3000 info 3000 info 3000 info </td>
+                        </tr>
+                        <tr class="item">
+                            <td>Cap</td>    
+                            <td>28000000</td>
+                            <td class="break">Cap info Cap info Cap info Cap info Cap info Cap info Cap info Cap info Cap info Cap info Cap info Cap info Cap info Cap info Cap info Cap info Cap info Cap info Cap info Cap info Cap info Cap info Cap info Cap info Cap info Cap info Cap info </td>
+                        </tr>
+                        <tr class="item">
+                            <td>SB</td>    
+                            <td>20000000</td>
+                            <td class="break">SB info SB info SB info SB info SB info SB info SB info SB info SB info SB info SB info SB info SB info SB info SB info SB info SB info SB info SB info SB info SB info SB info SB info SB info SB info SB info SB info SB info SB info SB info SB info SB info SB info </td>
+                        </tr>
+                    </table>
+                </div>
+            </li>
+            <li>
+                <b class="raid-header">Alpha</b>
+                <div id="alphaDisplay">
+                    <table>
+                        <tr>
+                            <th>Member</th>
+                            <th>Cosmic</th>
+                            <th>Global</th>
+                            <th>City</th>
+                        </tr>
+                    </table>
+                </div>
+            </li>
+            <li>
+                <b>Gamma</b>
+                <div id="gammaDisplay">
+                    <table>
+                        <tr>
+                            <th>Member</th>
+                            <th>1 & 8</th>
+                            <th>2 & 7</th>
+                            <th>3 & 6</th>
+                            <th>4 & 5</th>
+                        </tr>
+                    </table>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script src="local-cdn/papaparse.min.js"></script>
+    <script src="local-cdn/w3sort.js"></script>
+    <script src="teams.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

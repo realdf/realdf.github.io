@@ -1,0 +1,46 @@
+body {
+    /* display: flex;
+    flex: auto; */
+    /* align-items: center;
+    justify-content: center; */
+    /* text-align: center; */
+}
+
+.red-border {
+    outline-width: 2px;
+    outline-style: solid;
+    outline-color: red;
+}
+
+#roster-info {
+    /* text-align: left; */
+}
+
+.raid-header {
+    padding: 5px;
+    border: solid 1px;
+    margin: 5px auto;
+    /* margin: ; */
+}
+
+table {
+  display: inline-block;/* whatever, just  reset table layout display to go further */
+}
+th {
+    /* border: solid 1px; */
+}
+td {
+  border: solid 1px;
+}
+tr {
+  display: flex;
+  flex-wrap: wrap; /* allow to wrap on multiple rows */
+}
+th, td {
+  display: block;
+  flex: 1 /* to evenly distributs flex elements */
+}
+.break {
+  width: 100%; /* fill entire width,row */
+  flex: auto; /* reset the flex properti to allow width take over */
+}
